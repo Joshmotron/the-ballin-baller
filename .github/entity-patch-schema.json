@@ -349,7 +349,7 @@
 		"FullRef": {
 			"properties": {
 				"exposedEntity": {
-					"type": "string"
+					"type": ["string", "null"]
 				},
 				"externalScene": {
 					"type": "string"
