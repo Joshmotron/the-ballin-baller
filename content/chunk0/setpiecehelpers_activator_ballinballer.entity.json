@@ -97,9 +97,9 @@
 				},
 				"m_sPromptTextPassive": {
 					"type": "ZString",
-					"value": "Missing Tool"
+					"value": "Missing the Ballin Baller"
 				},
-				"m_bIsIllegal": { "type": "bool", "value": true },
+				"m_bIsIllegal": { "type": "bool", "value": false },
 				"m_bCanBeOperatedWithItemsInHand": {
 					"type": "bool",
 					"value": true
@@ -186,11 +186,11 @@
 				},
 				"m_bOverrideInteractionRange": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_fOverrideInteractionRangeValue": {
 					"type": "float32",
-					"value": 1.5
+					"value": 3.0
 				},
 				"m_fAdditionalAlignRadius": {
 					"type": "float32",
@@ -486,7 +486,7 @@
 				},
 				"m_eEvaluation": {
 					"type": "ZHeroKeywordCondition.EEvaluationType",
-					"value": "ALL"
+					"value": "ANY"
 				}
 			}
 		},
@@ -524,7 +524,7 @@
 			"properties": {
 				"m_sId": {
 					"type": "ZGuid",
-					"value": "a5602f90-11a5-4edf-93e7-d63d2912811e"
+					"value": "3a7273bc-560f-4a3e-922c-f63da627725b"
 				}
 			}
 		},
@@ -585,7 +585,7 @@
 				},
 				"m_bOverrideInteractionRange": {
 					"type": "bool",
-					"value": false
+					"value": true
 				},
 				"m_bApplyPromptDescriptionText": {
 					"type": "bool",

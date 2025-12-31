@@ -45,13 +45,38 @@
 			]
 		},
 		{
+			"SubEntityOperation": [
+				"64a14c6a04f07f64",
+				{
+					"SetExposedEntity": [
+						"LegalProfession",
+						{
+							"isArray": false,
+							"refersTo": [
+								{
+									"ref": "b787332200feca61",
+									"externalScene": null,
+									"exposedEntity": "LegalProfession"
+								},
+								{
+									"ref": "cafeb3e5bf4485c7",
+									"externalScene": null,
+									"exposedEntity": "LegalProfession"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
 			"AddEntity": [
 				"cafeb3e5bf4485c7",
 				{
 					"parent": "64a14c6a04f07f64",
 					"name": "SetPieceHelpers_Activator_BallinBaller",
-					"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_activator_singletool.entitytemplate].pc_entitytype",
-					"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_activator_singletool.entitytemplate].pc_entityblueprint",
+					"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_activator_ballinballer.entitytemplate].pc_entitytype",
+					"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_activator_ballinballer.entitytemplate].pc_entityblueprint",
 					"properties": {
 						"m_mTransform": {
 							"type": "SMatrix43",
