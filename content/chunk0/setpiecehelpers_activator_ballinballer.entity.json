@@ -1,0 +1,1121 @@
+{
+	"tempHash": "001158F9A5BBAF7F",
+	"tbluHash": "00743E5CE5C6D05D",
+	"rootEntity": "cafeb286a274d45b",
+	"entities": {
+		"cafe761bb5cdff61": {
+			"parent": "cafeb286a274d45b",
+			"name": "InHandsOrNotNeoVR",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_eEvaluation": {
+					"type": "ZValueBool_Operation_Signal.EEvaluationType",
+					"value": "ANY"
+				},
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafeb784b85d6575", "cafec12ce2e29f47"],
+					"postInit": true
+				}
+			}
+		},
+		"cafe39b9439f91a3": {
+			"parent": "cafeb286a274d45b",
+			"name": "SubActionUseability",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_bValue": { "type": "bool", "value": true },
+				"m_bValueOnNoOperators": { "type": "bool", "value": true }
+			}
+		},
+		"cafeaf7ac5544002": {
+			"parent": "cafeb286a274d45b",
+			"name": "EnabledConditionsFromOutside",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bValueOnNoOperators": { "type": "bool", "value": true },
+				"m_bValue": { "type": "bool", "value": true },
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				}
+			}
+		},
+		"cafece97ec8bca5f": {
+			"parent": "cafeb286a274d45b",
+			"name": "Value_ShowInteractionPrompt",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_basic.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafec34171a32726": {
+			"parent": "cafeb286a274d45b",
+			"name": "SetpieceHelper_InteractionDelay",
+			"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelper_interactiondelay.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelper_interactiondelay.entitytemplate].pc_entityblueprint"
+		},
+		"cafe7c35e07be4d1": {
+			"parent": "cafeb286a274d45b",
+			"name": "SubActionVisibility",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafece97ec8bca5f", "cafeaf7ac5544002", "cafec34171a32726"]
+				}
+			}
+		},
+		"cafefea0695c98ac": {
+			"parent": "cafeb286a274d45b",
+			"name": "SetPieceHelpers_Legality",
+			"factory": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_legality.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/setpiecehelpers.template?/setpiecehelpers_legality.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_bActionHasValidDisguise": {
+					"type": "bool",
+					"value": true
+				}
+			}
+		},
+		"cafeb850bdb7a367": {
+			"parent": "cafeb286a274d45b",
+			"name": "Interaction_Interact",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_subaction.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_ConditionList_Visible": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe7c35e07be4d1"]
+				},
+				"m_sPromptTextPassive": {
+					"type": "ZString",
+					"value": "Missing Tool"
+				},
+				"m_bIsIllegal": { "type": "bool", "value": true },
+				"m_bCanBeOperatedWithItemsInHand": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eActionType": {
+					"type": "EActionType",
+					"value": "AT_USE_HOLD"
+				},
+				"m_pIllegalCondition": {
+					"type": "SEntityTemplateReference",
+					"value": {
+						"ref": "cafefea0695c98ac",
+						"externalScene": null,
+						"exposedEntity": "OutputValue"
+					}
+				},
+				"m_sPromptText": {
+					"type": "ZString",
+					"value": "Activate"
+				},
+				"m_rPromptTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_break.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_rPromptDescriptionTextPassiveResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_missingsomeitem.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_bShowUnusableAsGrayedInteraction": {
+					"type": "bool",
+					"value": true
+				},
+				"m_eUsableConditionKeywordsBehaviorB": {
+					"type": "EKeywordSetBehavior",
+					"value": "EKWSB_None"
+				},
+				"m_rContextLocation": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rContextObjectSpatial": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_RuntimeNetworkResourceID": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/animationnetworks/hitman01/contextactions/elevatorpushbutton.aln].pc_rtn",
+						"flag": "9F"
+					}
+				},
+				"m_rUsableConditionKeywordsA": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rKeywords": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_bCanBeOperatedFromAnyAngle": {
+					"type": "bool",
+					"value": false
+				},
+				"ShouldTriggerAISoundEvent": {
+					"type": "bool",
+					"value": false
+				},
+				"m_rPromptTextPassiveResource": {
+					"type": "ZRuntimeResourceID",
+					"value": {
+						"resource": "[assembly:/localization/hitman6/conversations/ui/pro/setpieces.sweetmenutext?/setpieces_localization_prompt_break.sweetline].pc_sweetline",
+						"flag": "5F"
+					}
+				},
+				"m_eActionGroupIcon": {
+					"type": "EUIActionGroupIcon",
+					"value": "EUIAGI_NoIcon"
+				},
+				"m_bOverrideInteractionRange": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fOverrideInteractionRangeValue": {
+					"type": "float32",
+					"value": 1.5
+				},
+				"m_fAdditionalAlignRadius": {
+					"type": "float32",
+					"value": 0.0
+				},
+				"m_bIgnoreZeroWeightEvents": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bApplyPromptDescriptionText": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rPromptDescriptionTextResource": {
+					"type": "ZRuntimeResourceID",
+					"value": null
+				},
+				"m_bIsLargeScale": { "type": "bool", "value": false },
+				"m_RequiredItem": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_bIsSevere": { "type": "bool", "value": false },
+				"m_sPromptDescriptionText": {
+					"type": "ZString",
+					"value": ""
+				},
+				"m_fInterruptibleActionDuration": {
+					"type": "float32",
+					"value": 0.0
+				},
+				"m_bInterruptibleAction": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fAttentionGainModifier": {
+					"type": "float32",
+					"value": 6.0
+				},
+				"m_fAttentionGainRange": {
+					"type": "float32",
+					"value": 10.0
+				},
+				"m_fIllegalDuration": { "type": "float32", "value": 1.0 },
+				"m_bEquipRequiredItem": { "type": "bool", "value": true },
+				"m_bPlaySwipeIfThereIsNoAnim": {
+					"type": "bool",
+					"value": false
+				},
+				"m_sPromptDescriptionPassiveText": {
+					"type": "ZString",
+					"value": ""
+				},
+				"m_rUsableConditionKeywordsB": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_eUsableConditionKeywordsBehaviorA": {
+					"type": "EKeywordSetBehavior",
+					"value": "EKWSB_Any"
+				},
+				"m_bCanBeOperatedWithItemInLeftHand": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bRestorePreSubactionItems": {
+					"type": "bool",
+					"value": true
+				},
+				"m_aPromptText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_aPromptTextPassive": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_aPromptDescriptionText": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_aPromptDescriptionTextPassive": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_bVRNoAlignment": { "type": "bool", "value": true },
+				"m_bVRForceSwipeAnimation": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bVRHideAnimation": { "type": "bool", "value": false },
+				"m_bOverrideInteractionRangeVR": {
+					"type": "bool",
+					"value": false
+				},
+				"m_fOverrideInteractionRangeValueVR": {
+					"type": "float32",
+					"value": 1.0
+				},
+				"m_vrMotionProgress": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_rVrPromptLocationOverride": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_ConditionList_Usable": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe39b9439f91a3", "cafe7c35e07be4d1", "cafef1fbd006a88c", "cafe761bb5cdff61"],
+					"postInit": true
+				},
+				"m_pPerceptibleSpatial": {
+					"type": "SEntityTemplateReference",
+					"value": null,
+					"postInit": true
+				}
+			},
+			"events": {
+				"Completed": {
+					"Poll": ["cafece593addc638"],
+					"Send": ["cafeb2e8a827985c"],
+					"StartDelay": ["cafec34171a32726"]
+				},
+				"Started": { "SetFalse": ["cafece97ec8bca5f"] }
+			},
+			"outputCopying": {
+				"Started": { "Started": ["cafeb286a274d45b"] },
+				"Completed": { "Completed": ["cafeb286a274d45b"] },
+				"AnimEvent_Generic00": {
+					"OnInteractionAnimEvent": ["cafeb286a274d45b"]
+				},
+				"AnimEvent_Generic07": {
+					"AnimEvent_Generic07_Sound": ["cafeb286a274d45b"]
+				},
+				"AnimEvent_Generic01": {
+					"AnimEvent_Generic01": ["cafeb286a274d45b"]
+				},
+				"ItemUsed": { "ItemUsed": ["cafeb286a274d45b"] },
+				"RH_Place": { "RH_Place": ["cafeb286a274d45b"] },
+				"AnimEvent_Generic02": {
+					"AnimEvent_Generic02": ["cafeb286a274d45b"]
+				},
+				"RH_Swap": { "RH_Swap": ["cafeb286a274d45b"] },
+				"LH_Show": { "LH_Show": ["cafeb286a274d45b"] },
+				"LH_Hide": { "LH_Hide": ["cafeb286a274d45b"] },
+				"Interrupted": { "Interrupted": ["cafeb286a274d45b"] },
+				"RH_Show": { "RH_Show": ["cafeb286a274d45b"] },
+				"RH_Hide": { "RH_Hide": ["cafeb286a274d45b"] },
+				"SoundEvent02": { "SoundEvent02": ["cafeb286a274d45b"] },
+				"SoundEvent03": { "SoundEvent03": ["cafeb286a274d45b"] },
+				"CompletedRH": { "CompletedRH": ["cafeb286a274d45b"] },
+				"CompletedLH": { "CompletedLH": ["cafeb286a274d45b"] }
+			}
+		},
+		"cafe98f97a8b1a57": {
+			"parent": "cafeb286a274d45b",
+			"name": "Interaction_MainActionHelper",
+			"factory": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/interactionbase.template?/interaction_mainactionhelper.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aSubactions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafeb850bdb7a367"]
+				},
+				"m_bRequiresHitmanFacing": {
+					"type": "bool",
+					"value": false
+				},
+				"GlowActiveConditions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe7c35e07be4d1"]
+				},
+				"m_aPromptPositions": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_aUIHighlightGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_aIgnoreCollisionGeom": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_bWorldAlignPrompt": { "type": "bool", "value": true },
+				"m_bWorldAlignRotateHorizontalOnly": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bIgnoreCollision": { "type": "bool", "value": true },
+				"m_bRequiresHitmanInFront": {
+					"type": "bool",
+					"value": true
+				},
+				"OuterGlowTargets": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": []
+				},
+				"m_Object": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb286a274d45b",
+					"postInit": true
+				},
+				"m_aNearHeroEnableConditionListeners": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": [
+						"cafef1fbd006a88c",
+						{
+							"ref": "cafefea0695c98ac",
+							"externalScene": null,
+							"exposedEntity": "ConditionListener"
+						}
+					],
+					"postInit": true
+				},
+				"m_eidParent": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb286a274d45b",
+					"postInit": true
+				}
+			}
+		},
+		"cafe52f31b08bfcb": {
+			"parent": "cafeb286a274d45b",
+			"name": "Usable",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_operation.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_aValues": {
+					"type": "TArray<SEntityTemplateReference>",
+					"value": ["cafe39b9439f91a3", "cafe7c35e07be4d1"]
+				}
+			}
+		},
+		"cafec12ce2e29f47": {
+			"parent": "cafeb286a274d45b",
+			"name": "NotNeoVrPlatform",
+			"factory": "[modules:/zinvertedcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zinvertedcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_rCondition": {
+					"type": "SEntityTemplateReference",
+					"value": "cafebbbd06a2bda0",
+					"postInit": true
+				}
+			}
+		},
+		"cafebbbd06a2bda0": {
+			"parent": "cafeb286a274d45b",
+			"name": "VRHelper_IsNeoVR",
+			"factory": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrhelper_isneovr.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/gamecore/vrhelpers.template?/vrhelper_isneovr.entitytemplate].pc_entityblueprint"
+		},
+		"cafeb8162ecb28c1": {
+			"parent": "cafeb286a274d45b",
+			"name": "Value_UseOnlyOnce",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool.entitytemplate].pc_entityblueprint",
+			"properties": { "m_bValue": { "type": "bool", "value": true } }
+		},
+		"cafece593addc638": {
+			"parent": "cafeb286a274d45b",
+			"name": "OnlyEnableIfNotSingleUse",
+			"factory": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/_pro/design/logic/valuebool.template?/valuebool_poll.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"m_rValueEntity": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb8162ecb28c1"
+				}
+			},
+			"events": { "PollFalse": { "SetTrue": ["cafece97ec8bca5f"] } }
+		},
+		"cafef1fbd006a88c": {
+			"parent": "cafeb286a274d45b",
+			"name": "HeroKeywordCondition",
+			"factory": "[modules:/zherokeywordcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bUseInventory": { "type": "bool", "value": true },
+				"m_bIncludeItemHiddenInInventory": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bCheckInsideContainers": {
+					"type": "bool",
+					"value": true
+				},
+				"m_rRequirements": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_eEvaluation": {
+					"type": "ZHeroKeywordCondition.EEvaluationType",
+					"value": "ALL"
+				}
+			}
+		},
+		"cafeb784b85d6575": {
+			"parent": "cafeb286a274d45b",
+			"name": "IsKeywordInHands",
+			"factory": "[modules:/zherokeywordcondition.class].pc_entitytype",
+			"blueprint": "[modules:/zherokeywordcondition.class].pc_entityblueprint",
+			"properties": {
+				"m_bUseInventory": { "type": "bool", "value": false },
+				"m_bIncludeItemHiddenInInventory": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckInsideContainers": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bCheckLeftHand": { "type": "bool", "value": true },
+				"m_rRequirements": {
+					"type": "SEntityTemplateReference",
+					"value": null
+				},
+				"m_eEvaluation": {
+					"type": "ZHeroKeywordCondition.EEvaluationType",
+					"value": "ALL"
+				}
+			}
+		},
+		"cafe000dc2f27b5c": {
+			"parent": "cafeb286a274d45b",
+			"name": "RepositoryItem",
+			"factory": "[modules:/zrepositoryitementity.class].pc_entitytype",
+			"blueprint": "[modules:/zrepositoryitementity.class].pc_entityblueprint",
+			"properties": {
+				"m_sId": {
+					"type": "ZGuid",
+					"value": "a5602f90-11a5-4edf-93e7-d63d2912811e"
+				}
+			}
+		},
+		"cafeb2e8a827985c": {
+			"parent": "cafeb286a274d45b",
+			"name": "Setpiece_metric_ActivatorNoTool",
+			"factory": "[assembly:/templates/online/contractstemplates.template?/setpiece_metric_template.entitytemplate].pc_entitytype",
+			"blueprint": "[assembly:/templates/online/contractstemplates.template?/setpiece_metric_template.entitytemplate].pc_entityblueprint",
+			"properties": {
+				"setpieceType_metricvalue": {
+					"type": "ZString",
+					"value": "DefaultActivators"
+				},
+				"toolUsed_metricvalue": {
+					"type": "ZString",
+					"value": "NA"
+				},
+				"m_Item": {
+					"type": "SEntityTemplateReference",
+					"value": "cafe000dc2f27b5c"
+				},
+				"setpieceHelper_metricvalue": {
+					"type": "ZString",
+					"value": "Activator_SingleTool"
+				},
+				"name_metricvalue": {
+					"type": "ZString",
+					"value": "NotAvailable"
+				},
+				"Item_triggered_metricvalue": {
+					"type": "ZString",
+					"value": "NotAvailable"
+				},
+				"SendMetric_ON": { "type": "bool", "value": true },
+				"spatial": {
+					"type": "SEntityTemplateReference",
+					"value": "cafeb286a274d45b",
+					"postInit": true
+				}
+			}
+		},
+		"cafeb286a274d45b": {
+			"parent": null,
+			"name": "SetPieceHelpers_Activator_BallinBaller",
+			"factory": "[modules:/zcompositeentity.class].pc_entitytype",
+			"blueprint": "[modules:/zcompositeentity.class].pc_entityblueprint",
+			"properties": {
+				"m_mTransform": {
+					"type": "SMatrix43",
+					"value": {
+						"rotation": { "x": -0.0, "y": 0.0, "z": -0.0 },
+						"position": {
+							"x": -14.877019882202148,
+							"y": 0.0,
+							"z": 0.0
+						}
+					}
+				},
+				"m_bOverrideInteractionRange": {
+					"type": "bool",
+					"value": false
+				},
+				"m_bApplyPromptDescriptionText": {
+					"type": "bool",
+					"value": true
+				},
+				"m_bVRNoAlignment": { "type": "bool", "value": true },
+				"m_bVRForceSwipeAnimation": {
+					"type": "bool",
+					"value": true
+				}
+			},
+			"platformSpecificProperties": {
+				"VR_PS4": {
+					"m_bVRNoAlignment": { "type": "bool", "value": false },
+					"m_bVRForceSwipeAnimation": {
+						"type": "bool",
+						"value": false
+					}
+				}
+			},
+			"inputCopying": {
+				"Reset": { "SetTrue": ["cafece97ec8bca5f"] },
+				"Disable": { "SetFalse": ["cafece97ec8bca5f"] }
+			},
+			"propertyAliases": {
+				"AISoundEventSpatial": [
+					{
+						"originalProperty": "AISoundEventSpatial",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"KeywordReq_B": [
+					{
+						"originalProperty": "m_rUsableConditionKeywordsB",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"OuterGlowTargets": [
+					{
+						"originalProperty": "OuterGlowTargets",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"SendMetric_ON": [
+					{
+						"originalProperty": "SendMetric_ON",
+						"originalEntity": "cafeb2e8a827985c"
+					}
+				],
+				"ShouldTriggerAISoundEvent": [
+					{
+						"originalProperty": "ShouldTriggerAISoundEvent",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"UsabilityConditions": [
+					{
+						"originalProperty": "m_aValues",
+						"originalEntity": "cafe39b9439f91a3"
+					}
+				],
+				"actionm_rPromptDescriptionTextResource": [
+					{
+						"originalProperty": "m_rPromptDescriptionTextResource",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_RequiredItem": [
+					{
+						"originalProperty": "m_RequiredItem",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_TurnOnAnim": [
+					{
+						"originalProperty": "m_RuntimeNetworkResourceID",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_UIHighlightGeom": [
+					{
+						"originalProperty": "m_UIHighlightGeom",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_aPromptDescriptionText": [
+					{
+						"originalProperty": "m_aPromptDescriptionText",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_aPromptDescriptionTextPassive": [
+					{
+						"originalProperty": "m_aPromptDescriptionTextPassive",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_aPromptPositions": [
+					{
+						"originalProperty": "m_aPromptPositions",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_aPromptText": [
+					{
+						"originalProperty": "m_aPromptText",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_aPromptTextPassive": [
+					{
+						"originalProperty": "m_aPromptTextPassive",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_aUIHighlightGeom": [
+					{
+						"originalProperty": "m_aUIHighlightGeom",
+						"originalEntity": "cafe98f97a8b1a57"
+					},
+					{
+						"originalProperty": "m_aIgnoreCollisionGeom",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_aValues": [
+					{
+						"originalProperty": "m_aValues",
+						"originalEntity": "cafeaf7ac5544002"
+					}
+				],
+				"m_bActionHasValidDisguise": [
+					{
+						"originalProperty": "m_bActionHasValidDisguise",
+						"originalEntity": "cafefea0695c98ac"
+					}
+				],
+				"m_bAlignVertically": [
+					{
+						"originalProperty": "m_bAlignVertically",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bApplyPromptDescriptionText": [
+					{
+						"originalProperty": "m_bApplyPromptDescriptionText",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bCanBeOperatedFromAnyAngle": [
+					{
+						"originalProperty": "m_bCanBeOperatedFromAnyAngle",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bCanBeOperatedWithItemInLeftHand": [
+					{
+						"originalProperty": "m_bCanBeOperatedWithItemInLeftHand",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bCanBeOperatedWithItemsInHand": [
+					{
+						"originalProperty": "m_bCanBeOperatedWithItemsInHand",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bEquipRequiredItem": [
+					{
+						"originalProperty": "m_bEquipRequiredItem",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bForceContextLocationEndPosition": [
+					{
+						"originalProperty": "m_bForceContextLocationEndPosition",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bIgnoreCollision": [
+					{
+						"originalProperty": "m_bIgnoreCollision",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_bIgnoreZeroWeightEvents": [
+					{
+						"originalProperty": "m_bIgnoreZeroWeightEvents",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bInterruptibleAction": [
+					{
+						"originalProperty": "m_bInterruptibleAction",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bIsIllegal": [
+					{
+						"originalProperty": "m_bIsIllegal",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bIsLargeScale": [
+					{
+						"originalProperty": "m_bIsLargeScale",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bIsSevere": [
+					{
+						"originalProperty": "m_bIsSevere",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bOverrideInteractionRange": [
+					{
+						"originalProperty": "m_bOverrideInteractionRange",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bOverrideInteractionRangeVR": [
+					{
+						"originalProperty": "m_bOverrideInteractionRangeVR",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bPlaySwipeIfThereIsNoAnim": [
+					{
+						"originalProperty": "m_bPlaySwipeIfThereIsNoAnim",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bRequiresHitmanFacing": [
+					{
+						"originalProperty": "m_bRequiresHitmanFacing",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_bRequiresHitmanInFront": [
+					{
+						"originalProperty": "m_bRequiresHitmanInFront",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_bRestorePreSubactionItems": [
+					{
+						"originalProperty": "m_bRestorePreSubactionItems",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bUseOnlyOnce": [
+					{
+						"originalProperty": "m_bValue",
+						"originalEntity": "cafeb8162ecb28c1"
+					}
+				],
+				"m_bVRForceSwipeAnimation": [
+					{
+						"originalProperty": "m_bVRForceSwipeAnimation",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bVRHideAnimation": [
+					{
+						"originalProperty": "m_bVRHideAnimation",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bVRNoAlignment": [
+					{
+						"originalProperty": "m_bVRNoAlignment",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_bWorldAlignPrompt": [
+					{
+						"originalProperty": "m_bWorldAlignPrompt",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_bWorldAlignRotateHorizontalOnly": [
+					{
+						"originalProperty": "m_bWorldAlignRotateHorizontalOnly",
+						"originalEntity": "cafe98f97a8b1a57"
+					}
+				],
+				"m_eActionGroupIcon": [
+					{
+						"originalProperty": "m_eActionGroupIcon",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_eEvaluation": [
+					{
+						"originalProperty": "m_eEvaluation",
+						"originalEntity": "cafef1fbd006a88c"
+					},
+					{
+						"originalProperty": "m_eEvaluation",
+						"originalEntity": "cafeb784b85d6575"
+					}
+				],
+				"m_eSoundEventType": [
+					{
+						"originalProperty": "m_eSoundEventType",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_eTurnOnActionType": [
+					{
+						"originalProperty": "m_eActionType",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_eUsableConditionKeywordsBehaviorA": [
+					{
+						"originalProperty": "m_eUsableConditionKeywordsBehaviorA",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_eUsableConditionKeywordsBehaviorB": [
+					{
+						"originalProperty": "m_eUsableConditionKeywordsBehaviorB",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fAdditionalAlignRadius": [
+					{
+						"originalProperty": "m_fAdditionalAlignRadius",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fAttentionGainModifier": [
+					{
+						"originalProperty": "m_fAttentionGainModifier",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fAttentionGainRange": [
+					{
+						"originalProperty": "m_fAttentionGainRange",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fIllegalDuration": [
+					{
+						"originalProperty": "m_fIllegalDuration",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fInterruptibleActionDuration": [
+					{
+						"originalProperty": "m_fInterruptibleActionDuration",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fOverrideInteractionRangeValue": [
+					{
+						"originalProperty": "m_fOverrideInteractionRangeValue",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_fOverrideInteractionRangeValueVR": [
+					{
+						"originalProperty": "m_fOverrideInteractionRangeValueVR",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_nActionWheelIndex": [
+					{
+						"originalProperty": "m_nActionWheelIndex",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_pPerceptibleSpatial": [
+					{
+						"originalProperty": "m_pPerceptibleSpatial",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rContextLocation": [
+					{
+						"originalProperty": "m_rContextLocation",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rContextObjectSpatial": [
+					{
+						"originalProperty": "m_rContextObjectSpatial",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rPromptDescriptionTextPassiveResource": [
+					{
+						"originalProperty": "m_rPromptDescriptionTextPassiveResource",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rPromptTextResource": [
+					{
+						"originalProperty": "m_rPromptTextResource",
+						"originalEntity": "cafeb850bdb7a367"
+					},
+					{
+						"originalProperty": "m_rPromptTextPassiveResource",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rTargetListeningCondition": [
+					{
+						"originalProperty": "m_rTargetListeningCondition",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rToolKeywordRequirements": [
+					{
+						"originalProperty": "m_rUsableConditionKeywordsA",
+						"originalEntity": "cafeb850bdb7a367"
+					},
+					{
+						"originalProperty": "m_rRequirements",
+						"originalEntity": "cafef1fbd006a88c"
+					},
+					{
+						"originalProperty": "m_rKeywords",
+						"originalEntity": "cafeb850bdb7a367"
+					},
+					{
+						"originalProperty": "m_rRequirements",
+						"originalEntity": "cafeb784b85d6575"
+					}
+				],
+				"m_rVrPromptLocationOverride": [
+					{
+						"originalProperty": "m_rVrPromptLocationOverride",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_rWaitingCondition": [
+					{
+						"originalProperty": "m_rWaitingCondition",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_sId": [
+					{
+						"originalProperty": "m_sId",
+						"originalEntity": "cafe000dc2f27b5c"
+					}
+				],
+				"m_sPromptDescriptionPassiveText": [
+					{
+						"originalProperty": "m_sPromptDescriptionPassiveText",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_sPromptDescriptionText": [
+					{
+						"originalProperty": "m_sPromptDescriptionText",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_sPromptText": [
+					{
+						"originalProperty": "m_sPromptText",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_sPromptTextPassive": [
+					{
+						"originalProperty": "m_sPromptTextPassive",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"m_vrMotionProgress": [
+					{
+						"originalProperty": "m_vrMotionProgress",
+						"originalEntity": "cafeb850bdb7a367"
+					}
+				],
+				"name_metricvalue": [
+					{
+						"originalProperty": "name_metricvalue",
+						"originalEntity": "cafeb2e8a827985c"
+					}
+				],
+				"setpieceType_metricvalue": [
+					{
+						"originalProperty": "setpieceType_metricvalue",
+						"originalEntity": "cafeb2e8a827985c"
+					}
+				],
+				"toolUsed_metricvalue": [
+					{
+						"originalProperty": "toolUsed_metricvalue",
+						"originalEntity": "cafeb2e8a827985c"
+					}
+				]
+			},
+			"exposedEntities": {
+				"LegalProfession": {
+					"isArray": false,
+					"refersTo": [
+						{
+							"ref": "cafefea0695c98ac",
+							"externalScene": null,
+							"exposedEntity": "DisguiseKeyword"
+						}
+					]
+				},
+				"Interaction_Interact": {
+					"isArray": false,
+					"refersTo": ["cafeb850bdb7a367"]
+				},
+				"Usable": {
+					"isArray": false,
+					"refersTo": ["cafe52f31b08bfcb"]
+				}
+			}
+		}
+	},
+	"propertyOverrides": [],
+	"overrideDeletes": [],
+	"pinConnectionOverrides": [],
+	"pinConnectionOverrideDeletes": [],
+	"externalScenes": [],
+	"subType": "template",
+	"quickEntityVersion": 3.1,
+	"extraFactoryDependencies": [],
+	"extraBlueprintDependencies": [],
+	"comments": []
+}
