@@ -3,31 +3,6 @@
 	"tbluHash": "0082DA64F2F8A5A3",
 	"patch": [
 		{
-			"SubEntityOperation": [
-				"f2415d00262df3a5",
-				{
-					"SetExposedEntity": [
-						"LegalProfession",
-						{
-							"isArray": true,
-							"refersTo": [
-								{
-									"ref": "bc24a762a3511125",
-									"externalScene": null,
-									"exposedEntity": "LegalProfession"
-								},
-								{
-									"ref": "cafed90b65a562a7",
-									"externalScene": null,
-									"exposedEntity": "LegalProfession"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"AddEntity": [
 				"cafe86c6ca9ba973",
 				{

@@ -101,41 +101,6 @@
 			]
 		},
 		{
-			"SubEntityOperation": [
-				"19cdd27ef94fd436",
-				{
-					"SetExposedEntity": [
-						"LegalProfession",
-						{
-							"isArray": true,
-							"refersTo": [
-								{
-									"ref": "d5f0caecdc9d074c",
-									"externalScene": null,
-									"exposedEntity": "LegalProfession"
-								},
-								{
-									"ref": "293e5b75e27eca8d",
-									"externalScene": null,
-									"exposedEntity": "LegalProfession"
-								},
-								{
-									"ref": "cafed264c3c83038",
-									"externalScene": null,
-									"exposedEntity": "LegalProfession"
-								},
-								{
-									"ref": "cafe3ca99c2901a8",
-									"externalScene": null,
-									"exposedEntity": "LegalProfession"
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
 			"AddEntity": [
 				"cafe7a55fa8efb9e",
 				{
