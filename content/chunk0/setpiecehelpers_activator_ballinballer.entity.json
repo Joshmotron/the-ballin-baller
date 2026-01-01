@@ -69,7 +69,11 @@
 			"properties": {
 				"m_aValues": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafece97ec8bca5f", "cafeaf7ac5544002", "cafec34171a32726"]
+					"value": [
+						"cafece97ec8bca5f",
+						"cafeaf7ac5544002",
+						"cafec34171a32726"
+					]
 				}
 			}
 		},
@@ -300,7 +304,12 @@
 				},
 				"m_ConditionList_Usable": {
 					"type": "TArray<SEntityTemplateReference>",
-					"value": ["cafe39b9439f91a3", "cafe7c35e07be4d1", "cafef1fbd006a88c", "cafe761bb5cdff61"],
+					"value": [
+						"cafe39b9439f91a3",
+						"cafe7c35e07be4d1",
+						"cafef1fbd006a88c",
+						"cafe761bb5cdff61"
+					],
 					"postInit": true
 				},
 				"m_pPerceptibleSpatial": {
@@ -587,6 +596,7 @@
 					"type": "bool",
 					"value": true
 				},
+				"m_bIsIllegal": { "type": "bool", "value": false },
 				"m_bApplyPromptDescriptionText": {
 					"type": "bool",
 					"value": true

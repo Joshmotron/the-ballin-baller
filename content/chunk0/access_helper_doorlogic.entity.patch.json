@@ -32,7 +32,10 @@
 						"m_aSubactions",
 						[
 							{
-								"AddItemAfter": ["6a8ea3ece8fadd40", "cafeb086f0c7d650"]
+								"AddItemAfter": [
+									"6a8ea3ece8fadd40",
+									"cafeb086f0c7d650"
+								]
 							}
 						]
 					]
@@ -47,7 +50,10 @@
 						"m_aNearHeroEnableConditionListeners",
 						[
 							{
-								"AddItemAfter": ["dd5b1ce055041cd9", "cafe54ae9c6b468f"]
+								"AddItemAfter": [
+									"dd5b1ce055041cd9",
+									"cafe54ae9c6b468f"
+								]
 							}
 						]
 					]
@@ -229,7 +235,9 @@
 					},
 					"events": {
 						"AnimEvent_Generic00": {
-							"MUSIC_PLOT_REWARD_GetKeyword": ["852ed8e4243377b7"],
+							"MUSIC_PLOT_REWARD_GetKeyword": [
+								"852ed8e4243377b7"
+							],
 							"Poll": ["5ab11a77824a1a9d"]
 						},
 						"Started": { "SetTrue": ["fcbf4e21905e891b"] },
@@ -237,10 +245,14 @@
 					},
 					"outputCopying": {
 						"AnimEvent_Generic07": {
-							"IS_USeLockPic_AnimEvent_Generic07": ["96aaa4b84aac2399"]
+							"IS_USeLockPic_AnimEvent_Generic07": [
+								"96aaa4b84aac2399"
+							]
 						},
 						"SoundEvent02": {
-							"Is_UseLockpick_eSoundEvent02": ["96aaa4b84aac2399"]
+							"Is_UseLockpick_eSoundEvent02": [
+								"96aaa4b84aac2399"
+							]
 						},
 						"Started": {
 							"StartedLockPick": ["96aaa4b84aac2399"]
@@ -260,7 +272,7 @@
 					"properties": {
 						"m_RepositoryId": {
 							"type": "ZGuid",
-							"value": "f93b99a3-aef6-419f-b303-59470577696d"
+							"value": "374cc35f-877b-4cfd-914b-d059427a9f72"
 						}
 					}
 				}
@@ -277,7 +289,10 @@
 					"properties": {
 						"m_aValues": {
 							"type": "TArray<SEntityTemplateReference>",
-							"value": ["cafe54ae9c6b468f", "cafe0b65d3c49971"],
+							"value": [
+								"cafe54ae9c6b468f",
+								"cafe0b65d3c49971"
+							],
 							"postInit": true
 						}
 					}

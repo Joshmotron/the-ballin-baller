@@ -15,7 +15,10 @@
 			"SubEntityOperation": [
 				"e8ce8f20ed5d3a9d",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnActorHit", "Variant"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnActorHit",
+						"Variant"
+					]
 				}
 			]
 		},
@@ -23,7 +26,10 @@
 			"SubEntityOperation": [
 				"e8ce8f20ed5d3a9d",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnActorHit", "StunActor"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnActorHit",
+						"StunActor"
+					]
 				}
 			]
 		},
@@ -31,7 +37,10 @@
 			"SubEntityOperation": [
 				"e8ce8f20ed5d3a9d",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnActorHit", "GetPositionOf"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnActorHit",
+						"GetPositionOf"
+					]
 				}
 			]
 		},
@@ -39,7 +48,10 @@
 			"SubEntityOperation": [
 				"e8ce8f20ed5d3a9d",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnActorHit", "SetIActor"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnActorHit",
+						"SetIActor"
+					]
 				}
 			]
 		},
@@ -47,7 +59,10 @@
 			"SubEntityOperation": [
 				"e8ce8f20ed5d3a9d",
 				{
-					"RemoveAllEventConnectionsForTrigger": ["OnActorHit", "IActor"]
+					"RemoveAllEventConnectionsForTrigger": [
+						"OnActorHit",
+						"IActor"
+					]
 				}
 			]
 		},
@@ -55,24 +70,43 @@
 			"SubEntityOperation": [
 				"e8ce8f20ed5d3a9d",
 				{
-					"AddEventConnection": ["OnActorHit", "Pick", "cafe91039f03d454"]
+					"AddEventConnection": [
+						"OnActorHit",
+						"Pick",
+						"cafe91039f03d454"
+					]
 				}
 			]
 		},
 		{
-			"SubEntityOperation": ["c976c1b07ec4f4a7", { "RemoveAllEventConnectionsForEvent": "OnDying" }]
+			"SubEntityOperation": [
+				"c976c1b07ec4f4a7",
+				{ "RemoveAllEventConnectionsForEvent": "OnDying" }
+			]
 		},
 		{
-			"SubEntityOperation": ["c976c1b07ec4f4a7", { "RemoveAllEventConnectionsForEvent": "OnPacified" }]
+			"SubEntityOperation": [
+				"c976c1b07ec4f4a7",
+				{ "RemoveAllEventConnectionsForEvent": "OnPacified" }
+			]
 		},
 		{
-			"SubEntityOperation": ["c976c1b07ec4f4a7", { "RemoveAllEventConnectionsForEvent": "OnDead" }]
+			"SubEntityOperation": [
+				"c976c1b07ec4f4a7",
+				{ "RemoveAllEventConnectionsForEvent": "OnDead" }
+			]
 		},
 		{
-			"SubEntityOperation": ["7121d925631079ae", { "RemovePropertyByName": "m_Entity" }]
+			"SubEntityOperation": [
+				"7121d925631079ae",
+				{ "RemovePropertyByName": "m_Entity" }
+			]
 		},
 		{
-			"SubEntityOperation": ["e8bc4884808901ea", { "RemoveAllEventConnectionsForEvent": "Out02" }]
+			"SubEntityOperation": [
+				"e8bc4884808901ea",
+				{ "RemoveAllEventConnectionsForEvent": "Out02" }
+			]
 		},
 		{
 			"SubEntityOperation": [
@@ -188,7 +222,7 @@
 						},
 						"m_vGlobalSize": {
 							"type": "SVector3",
-							"value": { "x": 2.0, "y": 2.0, "z": 4.0 }
+							"value": { "x": 4.0, "y": 4.0, "z": 8.0 }
 						},
 						"m_eidParent": {
 							"type": "SEntityTemplateReference",
