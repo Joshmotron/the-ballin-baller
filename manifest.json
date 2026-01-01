@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/atampy25/simple-mod-framework/main/Mod%20Manager/src/lib/manifest-schema.json",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"id": "Ballin.Baller9000",
 	"name": "The Ballin' Baller 1.1.5",
 	"description": "The Ultimate(?) Cheat Gun",
@@ -46,5 +46,5 @@
 		}
 	},
 	"frameworkVersion": "2.33.33",
-	"updateCheck": "https://github.com/Joshmotron/theBallinBaller/releases/latest/download/updates.json"
+	"updateCheck": "https://github.com/Joshmotron/the-ballin-baller/releases/latest/download/updates.json"
 }
